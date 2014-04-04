@@ -1,5 +1,5 @@
 /*
- * untitled.java
+ * DiamondNumbers.java
  * 
  * Copyright 2014 Matthew Stavola <mbs@CB-mbs>
  * 
