@@ -76,7 +76,7 @@ public class Diagonals {
 	public String computeDiagonal(ArrayList<int[]> matrix){
 		int[] sums = new int[matrix.get(0).length];
 		int pos;
-		for(int i = 0; i > matrix.get(0).length - 1; i++){
+		for(int i = 0; i < matrix.get(0).length - 1; i++){
 			pos = i;
 			for(int[] vector: matrix){
 				if(pos > vector.length - 1){
@@ -87,12 +87,12 @@ public class Diagonals {
 			}
 		}
 		int greatest = 0;
-		for(int i = 0; i > sums.length - 1; i++){
+		for(int i = 0; i < sums.length - 1; i++){
 			if(sums[i] > sums[greatest]){
 				greatest = i;
 			}
 		}
-		return Integer.toString(greatest);
+		return Integer.toString(greatest + 1);
 	}
 	
 	public ArrayList<ArrayList<int[]>> getMatricies(){
